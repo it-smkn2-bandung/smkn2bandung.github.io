@@ -1,0 +1,503 @@
+:root {
+  --main-white-color: white;
+  --main-black-color: black;
+}
+
+body{
+  background-color: #eaeaea;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.static {
+  position: static;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-slide {
+  position: relative;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.owl-carousel .owl-slide-animated {
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+  transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+  transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+  transition-delay: 0.5s;
+}
+
+/* owl nav */
+.owl-prev span, .owl-next span {
+  color: #FFF;
+  font-size: 14px;
+  
+}
+
+.owl-next,.owl-prev{
+  display: none !important;
+}
+
+.owl-carousel:hover .owl-prev{
+  display: block !important;
+}
+
+.owl-carousel:hover .owl-next{
+  display: block !important;
+}
+
+.owl-prev:hover, 
+.owl-next:hover {
+  background-color: rgb(177, 8, 8) !important;
+  color: #cacaca;
+}
+
+.owl-prev, .owl-next {
+	position: absolute;
+  top: 40%;
+  background-color: rgb(213, 21, 21) !important;
+  width: 50px;
+  height:50px;
+  border-radius:0px !important;
+}
+
+
+.owl-prev {
+	left: 7px;
+}
+
+.owl-next {
+	right: 7px;
+}
+
+/* removing blue outline from buttons */
+button:focus, button:active {
+   outline: none;
+}
+
+.owl-carousel .btn-danger{
+  background-color: rgb(213, 21, 21);
+  padding:0px 40px;
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  line-height: 50px;
+  border-radius: 0px;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .owl-next,.owl-prev {
+    width: 25px;
+    height: 25px;
+  }
+
+  #Kompetensi .items{
+    font-size: 24px !important;
+    padding: 10px !important;
+   
+  }
+
+  #Kompetensi i.fas {
+    width: 80px !important;
+    height: 80px !important;
+  
+  }
+
+  #kepsek .col-lg-6{
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+
+  .owl-carousel h1{
+    font-size: 60px;
+  }
+
+}
+
+#description{
+  max-height: 100px; 
+}
+
+
+#features{
+ 
+  background-color: rgb(213, 21, 21) !important;
+  z-index: 999;
+  color: white;
+  padding:24px;
+}
+
+
+@media only screen and (min-width: 993px) {
+
+  #features .col-lg-4{
+    border-right: 2px solid white;
+  }
+
+  #features{
+    position: relative;
+    top: -80px;
+  }
+
+  #features-container{
+    height: 40px;
+  }
+
+  section#Kompetensi{
+    margin-top: 40px !important;
+  
+  }
+    
+}
+
+
+
+#Kompetensi h6{
+
+  font-size: 14px;
+  
+}
+
+#Kompetensi .items{
+  font-size: 48px;
+  padding: 24px;
+ 
+}
+#Kompetensi i{
+  margin-bottom: 10px;
+}
+
+#Kompetensi i.fas {
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(213, 21, 21);
+  display: inline-block;
+  border-radius: 100%;
+  padding: 35px 0px;
+  color: white;
+
+}
+
+#kepsek{
+  background-color:rgb(213, 21, 21);
+  padding: 24px 24px 24px 0px;
+  color: white;
+}
+
+
+#kepsek img{
+  width: 100%;
+  height: 100%;
+  max-height:313px;
+  max-width:500px;
+  margin: 8px 0px;  
+}
+
+
+
+.text-overflow{
+  max-height: 500px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.border-title::after {
+  background-color: #eeb441; 
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 300px;
+}
+
+#statistik{
+  background-color: rgb(213, 21, 21);
+  color: white;
+}
+
+#statistik i{
+  font-size: 60px;
+  padding: 10px 10px;
+}
+#statistik .col-4{
+  margin:0px 24px;
+}
+
+.lomba{
+  background-color: rgb(213, 21, 21);
+}
+
+.fasilitas .col-md-6,.lomba .col-md-6,.event .col-md-6{
+  padding-top: 30px; 
+}
+
+.cards {
+    width: 100%;
+}
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card__like {
+    width: 18px;
+}
+
+.card__clock {
+    width: 15px;
+  vertical-align: middle;
+    fill: #AD7D52;
+}
+.card__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.card__clock-info {
+    float: right;
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  top: 0;
+  
+}
+.card-item {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card-item:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    /* transform: scale(1.10, 1.10); */
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card-item:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card-item:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card-item:hover .card__info-hover {
+    opacity: 1;
+}
+
+a{
+  text-decoration: none !important;
+  color: #eeb441;
+  margin-bottom:-30px;
+}
+
+a:hover{
+  color : #d4a038;
+}
+
+.d-flex.justify-content-end{ 
+  margin-bottom: -20px !important;
+}
+
+.bg-footer {
+  background-color: #33383c;
+  padding: 50px 0 30px;
+}
+.footer-heading {
+  letter-spacing: 2px;
+}
+
+.footer-link a {
+  color: #acacac;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.footer-link a:hover {
+  color: #1bbc9b;
+}
+
+.contact-info {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+.facebook {
+  background-color: #4e71a8;
+  color: #ffffff;
+}
+
+.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+
+.google {
+  background-color: #d6492f;
+  color: #ffffff;
+}
+
+.apple {
+  background-color: #424041;
+  color: #ffffff;
+}
+
+.footer-alt {
+  color: #acacac;
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading:after {
+  content: '';
+  width: 25px;
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1bbc9b;
+}
+
+
+::-webkit-scrollbar{
+  width: 6px;
+  background-color: #cacaca;
+
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+  inset: 0 0 6px rgba(0,0,0,0,.3);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #000000;
+}
