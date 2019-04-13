@@ -24,7 +24,7 @@ body{
 }
 
 #carousel h1{
-  font-size: 48px;
+  font-size: 10vmin;
 
 }
 
@@ -134,10 +134,6 @@ button:focus, button:active {
     margin-bottom: 10px;
   }
 
-  #Kompetensi .items{
-    font-size: 24px !important;
-  }
-
   #Kompetensi i.fas {
     width: 80px !important;
     height: 80px !important;
@@ -149,14 +145,6 @@ button:focus, button:active {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  
-
-  .owl-carousel h1{
-    font-size: 60px;
-  }
-
-}
 
 #description{
   max-height: 100px; 
@@ -264,7 +252,7 @@ button:focus, button:active {
 }
 
 #statistik i{
-  font-size: 60px;
+  font-size: 5vw;
   padding: 10px 10px;
 }
 #statistik .col-4{
@@ -372,7 +360,6 @@ z-index: 2;
 }
 
 .card__category {
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 2px;
@@ -383,12 +370,11 @@ z-index: 2;
 .card__title {
     margin-top: 5px;
     margin-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
+    font-size: 4vmin;
 }
 
 .card__by {
     font-size: 12px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
 
