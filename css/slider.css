@@ -6,7 +6,6 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    top: 50%;
     left: 0;
     z-index: 1000;
     width: 100%;
@@ -14,12 +13,22 @@
     color: white;
 }
 
+@media only screen and (min-width: 768px) {
+    .owl-nav{
+      top:40%;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+.owl-nav{
+    bottom:-20px;
+}
+}
+
 .reviews .owl-nav>div {
     background: #1a3d63;
     color: white;
     z-index: 100;
-    width: 20px !important;
-    height: 20px !important;
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -95,12 +104,12 @@
 .reviews .item .card {
     border-radius: 0;
     border: none;
-    padding: 35px 0;
+    padding: 24px 0;
 }
 
 .reviews .item .card .info-col {
     margin-bottom: 25px;
-    padding: 15px 25px;
+    padding: 15px 15px 15px 24px;
 }
 
 .reviews .item .card .info-col .title {
@@ -111,7 +120,7 @@
 }
 
 .reviews .item .card .info-col .sub-title {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
