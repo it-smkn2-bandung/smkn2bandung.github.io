@@ -235,7 +235,7 @@ button:focus, button:active {
 }
 
 .border-title::after {
-  background-color: #eeb441; 
+  background-color: rgb(213, 21, 21); 
   bottom: 0;
   content: '';
   display: block;
@@ -283,7 +283,7 @@ button:focus, button:active {
   content: '';
   width: 200px;
   display: block;
-  border-bottom: 5px solid #d4a038;
+  border-bottom: 5px solid rgb(213, 21, 21);
 }
 
 .cards {
@@ -411,7 +411,7 @@ a{
 .bg-footer {
   background-color: #000000;
   padding: 50px 0 30px;
-  border-top: 5px solid #d4a038;
+  border-top: 5px solid rgb(213, 21, 21);
 }
 
 .footer-heading {
@@ -481,7 +481,7 @@ a{
   left: 0;
   bottom: 0;
   display: block;
-  border-bottom: 2px solid #d4a038;
+  border-bottom: 2px solid rgb(213, 21, 21);
 }
 
 .breadcrumb{
@@ -496,7 +496,7 @@ a{
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-  color: #d4a038;
+  color: rgb(213, 21, 21);
 }
 
 .breadcrumb-item.active {
