@@ -20,8 +20,9 @@
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/navbar/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Fasilitas - SMKN 2 Bandung</title>
   </head>
@@ -30,12 +31,78 @@
         <div id="content-wrap">
           <!-- all other page content -->
 
-            <!-- navbar -->
-            <nav>
-              <div class="container">
-                
+            <!-- Navbar -->
+            <header class="header-area">
+
+              <!-- Top Header Area -->
+              <div class="top-header">
+                  <div class="container h-100">
+                      <div class="row h-100">
+                          <div class="col-12 h-100">
+                              <div class="header-content h-100 d-flex align-items-center justify-content-center">
+                                  <div class="academy-logo">
+                                      <a href="#"><img src="img/smkn2.png" width="75" alt="Logo SMKN 2 Bandung"></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </nav>
+
+              <!-- Navbar Area -->
+              <div class="academy-main-menu">
+                  <div class="classy-nav-container breakpoint-off">
+                      <div class="container">
+                          <!-- Menu -->
+                          <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                              <!-- Navbar Toggler -->
+                              <div class="classy-navbar-toggler">
+                                  <span class="navbarToggler"><span></span><span></span><span></span></span>
+                              </div>
+
+                              <!-- Menu -->
+                              <div class="classy-menu">
+
+                                  <!-- close btn -->
+                                  <div class="classycloseIcon">
+                                      <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                  </div>
+
+                                  <!-- Nav Start -->
+                                  <div class="classynav">
+                                      <ul>
+                                          <li><a href="index.html">Home</a></li>
+                                          <li><a href="#">About Us</a>
+                                              <ul class="dropdown">
+                                                  <li><a href="#">Sejarah</a></li>
+                                                  <li><a href="#">Visi Misi</a></li>
+                                                  <li><a href="#">Struktur Organisasi</a></li>
+                                                  <li><a href="galery-home.html">Gallery</a></li>
+                                                  <li><a href="video-home.html">Videos</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="event-home.html">Events</a></li>
+                                          <li><a href="fasilitas-home.html">Facilities</a></li>
+                                          <li><a href="lomba-home.html">Achievements</a></li>
+                                      </ul>
+                                  </div>
+                                  <!-- Nav End -->
+                              </div>
+
+                              <!-- Calling Info -->
+                              <div class="calling-info">
+                                  <div class="call-center">
+                                      <a href="mailto:fawaznaufal23@gmail.com"><i class="fa fa-envelope"></i> <span>fawaznaufal23@gmail.com</span></a>
+                                  </div>
+                              </div>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </header>
+          <!-- Akhir dari Navbar -->
+
           <div class="header-img" style="background-image:url(img/event.jpg);"></div>
             <div class="container">
               <div class="row">
@@ -328,10 +395,19 @@
     
 
     <!-- Optional JavaScript -->
-    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/owlcarousel/js/owl.carousel.min.js"></script>
-
+    <script src="vendor/owlcarousel/js/owl.carousel.min.js"></script> -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="vendor/navbar/jquery/jquery-3.3.1.min.js"></script>
+    <!-- Popper js -->
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="vendor/navbar/bootstrap/js/bootstrap.js"></script>
+    <!-- All Plugins js -->
+    <script src="vendor/navbar/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="vendor/navbar/active.js"></script>
     <!-- call owlcarousel JavaScript -->
     <script src="js/owlcarousel.js" ></script>
     <script src="js/reviews.js"></script>
