@@ -5,6 +5,7 @@
 
 body{
   background-color: #eaeaea;
+  font-family: "Lato", sans-serif;
 }
 
 * {
@@ -39,77 +40,74 @@ body{
 
 }
 
-.owl-carousel .owl-slide {
+section#carousel .owl-carousel .owl-slide {
   position: relative;
   height: 100vh;
   background-color: lightgray;
 }
 
-.owl-carousel .owl-slide-animated {
+section#carousel .owl-carousel .owl-slide-animated {
   transform: translateX(20px);
   opacity: 0;
   visibility: hidden;
   transition: all 0.05s;
 }
 
-.owl-carousel .owl-slide-animated.is-transitioned {
+section#carousel .owl-carousel .owl-slide-animated.is-transitioned {
   transform: none;
   opacity: 1;
   visibility: visible;
   transition: all 0.5s;
 }
 
-.owl-carousel .owl-slide-title.is-transitioned {
+section#carousel .owl-carousel .owl-slide-title.is-transitioned {
   transition-delay: 0.2s;
 }
 
-.owl-carousel .owl-slide-subtitle.is-transitioned {
+section#carousel .owl-carousel .owl-slide-subtitle.is-transitioned {
   transition-delay: 0.35s;
 }
 
-.owl-carousel .owl-slide-cta.is-transitioned {
+section#carousel .owl-carousel .owl-slide-cta.is-transitioned {
   transition-delay: 0.5s;
 }
 
 /* owl nav */
-.owl-prev span, .owl-next span {
+section#carousel .owl-prev span,section#carousel .owl-next span {
   color: #FFF;
   font-size: 14px;
   
 }
-
-.owl-next,.owl-prev{
-  display: none !important;
-}
-
-.owl-carousel:hover .owl-prev{
+section#carousel .owl-carousel:hover .owl-prev{
   display: block !important;
 }
 
-.owl-carousel:hover .owl-next{
+section#carousel .owl-carousel:hover .owl-next{
   display: block !important;
 }
 
-.owl-prev:hover, 
-.owl-next:hover {
+section#carousel .owl-prev:hover, 
+section#carousel .owl-next:hover {
   background-color: rgb(177, 8, 8) !important;
   color: #cacaca;
 }
 
-.owl-prev, .owl-next {
+section#carousel .owl-prev, section#carousel .owl-next {
+  line-height: 45px;
 	position: absolute;
   background-color: rgb(213, 21, 21) !important;
   width: 50px;
   height:50px;
   border-radius:0px !important;
+  display: none !important;
 }
 
 
-.owl-prev {
+section#carousel .owl-prev {
 	left: 7px;
 }
 
-.owl-next {
+section#carousel .owl-next {
 	right: 7px;
 }
 
@@ -118,7 +116,7 @@ button:focus, button:active {
    outline: none;
 }
 
-.owl-carousel a{
+section#carousel .owl-carousel a{
   background-color: rgb(213, 21, 21);
   padding:10px;
   height: 40px;
@@ -134,21 +132,15 @@ button:focus, button:active {
 
 
 @media only screen and (min-width: 768px) {
-  .owl-prev, .owl-next {
+  section#carousel .owl-prev, section#carousel .owl-next {
     top:40%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .owl-carousel .owl-prev, .owl-next {
+  section#carousel .owl-prev, section#carousel .owl-next {
     bottom: 10px;
     margin-bottom: 10px;
-  }
-
-  #Kompetensi i.fas {
-    width: 80px !important;
-    height: 80px !important;
-  
   }
 
   #kepsek .col-lg-6{
@@ -164,7 +156,7 @@ button:focus, button:active {
 
 #features{
   background-color: rgb(213, 21, 21) !important;
-  z-index: 999;
+  z-index: 99;
   color: white;
   padding:24px;
 }
@@ -182,44 +174,13 @@ button:focus, button:active {
   }
 
   #features-container{
-    height: 40px;
+    height: 128px;
   }
-
-  section#Kompetensi{
-    margin-top: 40px !important;
-  
-  }
-    
-}
-
-
-
-#Kompetensi h6{
-
-  font-size: 14px;
   
 }
 
-#Kompetensi .items{
-  font-size: 48px;
-  padding: 24px;
-}
-#Kompetensi i{
-  margin-bottom: 10px;
-  
-}
 
-#Kompetensi i.fas {
-  text-align: center;
-  width: 120px;
-  height: 120px;
-  background-color: rgb(213, 21, 21);
-  display: inline-block;
-  border-radius: 100%;
-  align-items: center;
-  color: white;
-  padding:15% 0px;
-}
+
 
 #kepsek{
   background-color:rgb(213, 21, 21);
@@ -228,14 +189,23 @@ button:focus, button:active {
 }
 
 
-#kepsek img{
-  width: 100%;
-  height: 100%;
-  max-height:313px;
-  max-width:500px;
-  margin: 8px 0px;  
+.ratio {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
 }
-
+.img-circle {
+    border-radius: 50%;
+}
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
 
 
 .text-overflow{
@@ -292,9 +262,7 @@ button:focus, button:active {
 .reviews h2,.fasilitas h2::after,.event h2::after,.lomba h2::after{
   margin-top: 3px;
   content: '';
-  width: 200px;
-  display: block;
-  border-bottom: 5px solid rgb(213, 21, 21);
+ 
 }
 
 .cards {
@@ -563,7 +531,6 @@ a:hover{
   flex-direction: column;
   background: #fff;
   line-height: 1.4;
-  font-family: sans-serif;
   overflow: hidden;
   z-index: 0;
 }
@@ -643,10 +610,7 @@ a:hover{
   position: relative;
   z-index: 1;
 }
-.blog-card .description h1,
-.blog-card .description h2 {
-  font-family: Poppins, sans-serif;
-}
+
 .blog-card .description h1 {
   line-height: 1;
   margin: 0;
@@ -746,7 +710,6 @@ a:hover{
   padding: 20px;
   color: #fff;
   background: rgba(0,0,0,.4);
-  font-family: "Open Sans", sans-serif;
 }
 
 ::-webkit-scrollbar{

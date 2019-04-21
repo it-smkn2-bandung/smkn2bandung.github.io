@@ -17,11 +17,14 @@
 
     <!-- fontawesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar/style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/kompetensi.css">
 
     <title>Home - SMKN 2 Bandung</title>
   </head>
@@ -30,12 +33,84 @@
         <div id="content-wrap">
           <!-- all other page content -->
 
-            <!-- navbar -->
-            <nav>
-              <div class="container">
-                
-              </div>
-            </nav>
+                <!-- Navbar -->
+                <header class="header-area">
+
+                <!-- Top Header Area -->
+                <div class="top-header">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 h-100">
+                                <div class="header-content h-100 d-flex align-items-center justify-content-start">
+                                    <div class="academy-logo p-2">
+                                        <a href="/index.html"><img src="img/smkn2.png" width="80px" alt="Logo SMKN 2 Bandung"></a>
+                                    </div>
+                                    <h3 class="p-2">SMKN 2 BANDUNG</h3>
+                                    <div class="ml-auto display-none">
+                                      <a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></a>
+                                      <a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></a>
+                                      <a href="#"><i class="fab google footer-social-icon fa-google"></i></a>
+                                      <a href="#"><i class="fab instagram footer-social-icon fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navbar Area -->
+                <div class="academy-main-menu">
+                    <div class="classy-nav-container breakpoint-off">
+                        <div class="container">
+                            <!-- Menu -->
+                            <nav class="classy-navbar justify-content-between" id="academyNav">
+
+                                <!-- Navbar Toggler -->
+                                <div class="classy-navbar-toggler">
+                                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                                </div>
+
+                                <!-- Menu -->
+                                <div class="classy-menu">
+
+                                    <!-- close btn -->
+                                    <div class="classycloseIcon">
+                                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                    </div>
+
+                                    <!-- Nav Start -->
+                                    <div class="classynav">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a class="btn disabled" href="">About Us</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">Sejarah</a></li>
+                                                    <li><a href="#">Visi Misi</a></li>
+                                                    <li><a href="#">Struktur Organisasi</a></li>
+                                                    <li><a href="galery-home.html">Gallery</a></li>
+                                                    <li><a href="video-home.html">Videos</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="event-home.html">Events</a></li>
+                                            <li><a href="fasilitas-home.html">Facilities</a></li>
+                                            <li><a href="lomba-home.html">Achievements</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Nav End -->
+                                </div>
+
+                                <!-- Calling Info -->
+                                <div class="calling-info">
+                                    <div class="call-center">
+                                        <a href="mailto:fawaznaufal23@gmail.com"><i class="fa fa-envelope"></i> <span>fawaznaufal23@gmail.com</span></a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Akhir dari Navbar -->
 
             <!-- carousel -->
             <section id="carousel">
@@ -91,17 +166,17 @@
           <div class="container" id="features-container">
             <div class="row" id="features">
               <div class="col-lg-4">
-                <h5>Praktek</h5>
+                <h5 class="font-weight-bold">Praktek</h5>
                 <p>Praktek lebih banyak  dan lebih ditekankan daripada teori.</p>
               </div>
               <div class="col-lg-4">
-                  <h5>Keterampilan dan Keahlian</h5>
+                  <h5 class="font-weight-bold">Keterampilan dan Keahlian</h5>
                   <p>
                     Siswa sudah dibekali dengan keterampilan dan keahlian khusus yang sangat dibutuhkan dalam dunia kerja.
                   </p>
               </div>
               <div class="col-lg-4" style="border:none;">
-                <h5>Lulus Siap Kerja</h5>
+                <h5 class="font-weight-bold">Lulus Siap Kerja</h5>
                 <p>
                   Lulusan SMKN 2 Bandung Bisa langsung di salurkan Ke Perusahaan.
                 </p>
@@ -109,233 +184,194 @@
               </div>
             </div>
           </div>
-            
 
-          <section id="Kompetensi" class="p-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 mb-4 pb-2">
-                  <div class="d-flex justify-content-center">
-                    <h3 class="mb-2 border-title">Kompetensi Keahlian</h3>
+          <section id="Kompetensi" class="pb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 mb-4 pb-2">
+                    <div class="d-flex justify-content-center">
+                      <h3 class="section-title">Kompetensi Keahlian</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 items">
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-cogs"></a>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                      <h6 class="font-weight-bold">Teknik Pemesinan</h6>  
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 items">
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="hi hi--eff-2 hi--eff-2a 	fa fa-crop"></a>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                      <h6 class="font-weight-bold">Teknik Gambar Mesin</h6>  
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 items">
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-fire"></a>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                      <h6 class="font-weight-bold">Teknik Pengelasan</h6>  
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 items">
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-cog"></a>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                      <h6 class="font-weight-bold">Teknik Fabrikasi Logam</h6>  
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 col-md-3 items">
+                <div class="row">
+                  <div class="col-6 col-md-3 items">
                       <div class="d-flex justify-content-center">
-                        <i class="fas fa-industry"> </i>
-                        
+                        <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-code"></a>
                       </div>
+                      <div class="d-flex justify-content-center pt-3">
+                        <h6 class="font-weight-bold">Rekayasa Perangkat Lunak</h6>  
+                      </div>
+                    </div>
+                  <div class="col-6 col-md-3 items">
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-terminal"></a>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                      <h6 class="font-weight-bold">Teknik Komputer dan Jaringan</h6>  
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3 items">
                       <div class="d-flex justify-content-center">
-                        <h6>Teknik Pemesinan</h6>  
+                        <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-camera"></a>
                       </div>
-                </div>
-                <div class="col-6 col-md-3 items">
-                  <div class="d-flex justify-content-center">
-                      <i class="fas fa-drafting-compass"></i>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <h6>Teknik Gambar Mesin</h6>  
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 items">
-                  <div class="d-flex justify-content-center">
-                      <i class="fas fa-tram"></i>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <h6>Teknik Pengelasan</h6>  
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 items">
-                  <div class="d-flex justify-content-center">
-                      <i class="fas fa-atom"></i>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <h6>Teknik Fabrikasi Logam</h6>  
-                  </div>
-                </div>
-                <div class="col-6 col-md-3 items">
-                    <div class="d-flex justify-content-center">
-                        <i class="fas fa-laptop-code"></i>
+                      <div class="d-flex justify-content-center pt-3">
+                        <h6 class="font-weight-bold">Multimedia</h6>  
+                      </div>
                     </div>
+                  <div class="col-6 col-md-3 items">
                     <div class="d-flex justify-content-center">
-                      <h6>Rekayasa Perangkat Lunak</h6>  
+                      <a href="#" class="hi hi--eff-2 hi--eff-2a fa fa-smile-o"></a>
+                    </div>
+                    <div class="d-flex justify-content-center pt-3">
+                      <h6 class="font-weight-bold">Animasi</h6>  
                     </div>
                   </div>
-                <div class="col-6 col-md-3 items">
-                  <div class="d-flex justify-content-center">
-                      <i class="fas fa-network-wired"></i>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <h6>Teknik Komputer dan Jaringan</h6>  
-                  </div>
                 </div>
-                <div class="col-6 col-md-3 items">
-                    <div class="d-flex justify-content-center">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <h6>Multimedia</h6>  
-                    </div>
-                  </div>
-                <div class="col-6 col-md-3 items">
-                  <div class="d-flex justify-content-center">
-                      <i class="fas fa-smile-beam"></i>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <h6>Animasi</h6>  
-                  </div>
-                </div>
-                  
               </div>
-            </div>
-          </section>
+            </section>
 
           <section id="kepsek" class="p-5">
             <div class="container">
               <div class="row">
-                <div class="col-lg-6">
-                  <img src="img/kepsek-1.jpg" calt="kepala sekolah">
+                <div class="col-lg-6 m-auto">
+                    <div  class="ratio img-responsive img-circle" style="background-image: url(img/kepsek-1.jpg);"></div>
+
+                    <div class="d-flex justify-content-center p-4 mb-2">
+                        <h5>Tatang Gunawan M. M.Pd</h5>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                  <h2 style="border-bottom:5px solid white" class="mb-4 pb-2">Sambutan Kepala Sekolah</h2>
-                  <p style="font-size:18px;">
-                      Selamat datang di dunia pendidikan SMKN 2 Bandung. Kami merasa sangat bangga mendapatkan perhatian dan kepercayaan dari Bapak-Ibu sekalian. Kami akan berupaya untuk dapat menjalankan amanah ini dengan baik agar pertanggung jawaban di hadapan Allah SWT kelak menjadi ringan.
-                      Di sini kami mengajak anda para orang tua siswa untuk berpartisipasi membangun masyarakat pembelajar dalam rangka menyongsong era baru bagi anak-anak kita dan menjadikan anak-anak kita generasi yang mampu berkompetisi tanpa kehilangan wajah budaya dan moral.
+                <div class="col-lg-6 m-auto">
+                  <h2 style="border-bottom:2px solid white" class="section-title">Sambutan Kepala Sekolah</h2>
+                  <p>Selamat datang di dunia pendidikan SMKN 2 Bandung. Kami merasa sangat bangga mendapatkan perhatian dan kepercayaan dari Bapak-Ibu sekalian. Kami akan berupaya untuk dapat menjalankan amanah ini dengan baik agar pertanggung jawaban di hadapan Allah SWT kelak menjadi ringan.</p>
+                  <p></p>
+                  <p>Di sini kami mengajak anda para orang tua siswa untuk berpartisipasi membangun masyarakat pembelajar dalam rangka menyongsong era baru bagi anak-anak kita dan menjadikan anak-anak kita generasi yang mampu berkompetisi tanpa kehilangan wajah budaya dan moral.</p>
+                  <p></p>
+                  <p>Memasuki pergaulan global yang penuh dengan kompetisi ini, kita perlu menyiapkan mental anak-anak kita agar mampu bersaing dengan baik dengan memiliki moral/adab islami, kemandirian, kecerdasan, juga tentunya kreatifitas-inovasi sesuai tumbuh kembangnya.</p>
+                  <p></p>
+                  <p>Di SMKN 2 Bandung setiap siswa memiliki hak untuk berprestasi dan mendapatkan pelayanan yang baik. Karena kami memandang ini semua adalah amanah yang akan kami pertanggung jawabkan di hadapan Allah SWT. Tentu hal ini semakin terasa mudah dengan adanya kerjasama dari para orang tua siswa dalam menjalankan program sekolah.</p>
+                  <p></p>
+                  <p>Sebagai penutup, sekali lagi kami ucapkan selamat datang di SMKN 2 Bandung. Marilah bekerjasama agar anak-anak kita dapat berkembang dengan baik sehingga tumbuh menjadi generasi yang berakhlakul karimah dan cerdas.</p>
                 </div>
               </div>
             </div>
           </section>
 
             <!-- Reviews -->
-          <section class="reviews p-5">
-            <div class="col-12 mb-4 pb-2">
-                <div class="d-flex justify-content-center">
-                  <h2 class="mb-2">Testimonial</h2>
-                </div>
-              </div>
-            <div class="container">
-                <div class="owl-carousel">
-
-                    <!-- card -->
-                    <div class="item">
-                        <div class=" card">
-                            <div class="row">
-                                <div class="col-xs-7 col-7 info-col">
-                                    <h4 class="title">Dedi Ardiansyah</h4>
-                                    <h6 class="sub-title">Rekayasa Perangkat Lunak</h6>
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
-                                    <div class="user" style="background-image: url(https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png)"></div>
-                                </div>
-
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
-                                        voluptatibus
-                                        qui facere aut!</p>
-                                </div>
-                            </div>
+            <section class="p-5">
+                <div class="customer-feedback">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="offset-md-2 col-sm-8">
+                        <div>
+                          <h2 class="section-title">Apa Yang Siswa Katakan?</h2>
                         </div>
-                    </div>
-
-
-                    <!-- card -->
-                    <div class="item">
-                        <div class=" card">
-                            <div class="row">
-                                <div class="col-xs-7 col-7 info-col">
-                                    <h4 class="title">Naufal Fawwaz Andriawan</h4>
-                                    <h6 class="sub-title">Rekayasa Perangkat Lunak</h6>
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <!-- <li>
-                                            <i class="fa fa-star"></i>
-                                        </li> -->
-                                    </ul>
-                                </div>
-
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
-                                    <div class="user" style="background-image: url(https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png)"></div>
-                                </div>
-
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
-                                    <p>Sekolah bagus, di tamannya ada pohon, di kelasnya ada kursi dan meja, di lab komputer nya banyak komputer, dan di ruang gurunya banyak guru...</p>
-                                </div>
-                            </div>
+                      </div><!-- /End col -->
+                    </div><!-- /End row -->
+              
+                    <div class="row">
+                      <div class="offset-md-3 col-md-6 offset-sm-2 col-sm-8">
+                        <div class="owl-carousel feedback-slider">
+              
+                          <!-- slider item -->
+                          <div class="feedback-slider-item">
+                            <img src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" class="center-block rounded-circle" alt="Customer Feedback">
+                            <h3 class="customer-name">Naufal Fawwaz Andriawan</h3>
+                            <p>Sekolah bagus, di tamannya ada pohon, di kelasnya ada kursi dan meja, di lab komputer nya banyak komputer, dan di ruang gurunya banyak guru...</p>
+                            <span class="light-bg customer-rating" data-rating="5">
+                              5
+                              <i class="fa fa-star"></i>
+                            </span>
+                          </div>
+                          <!-- /slider item -->
+              
+                          <!-- slider item -->
+                          <div class="feedback-slider-item">
+                            <img src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" class="center-block rounded-circle" alt="Customer Feedback">
+                            <h3 class="customer-name">Dedi Ardiansyah</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo orci dictum consequat condimentum. Suspendisse gravida urna nec mauris vestibulum</p>
+                            <span class="light-bg customer-rating" data-rating="4">
+                              4
+                              <i class="fa fa-star"></i>
+                            </span>
+                          </div>
+                          <!-- /slider item -->
+              
+                          <!-- slider item -->
+                          <div class="feedback-slider-item">
+                            <img src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" class="center-block rounded-circle" alt="Customer Feedback">
+                            <h3 class="customer-name">Md Nahidul</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable its layout.</p>
+                            <span class="light-bg customer-rating" data-rating="5">
+                              5
+                              <i class="fa fa-star"></i>
+                            </span>
+                          </div>
+                          <!-- /slider item -->
+                          
+                        </div><!-- /End feedback-slider -->
+              
+                        <!-- side thumbnail -->
+                        <div class="feedback-slider-thumb display-none">
+                          <div class="thumb-prev">
+                            <span>
+                              <img src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="Customer Feedback">
+                            </span>
+                            <span class="light-bg customer-rating">
+                              5
+                              <i class="fa fa-star"></i>
+                            </span>
+                          </div>
+              
+                          <div class="thumb-next">
+                            <span>
+                              <img src="https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png" alt="Customer Feedback">
+                            </span>
+                            <span class="light-bg customer-rating">
+                              4
+                              <i class="fa fa-star"></i>
+                            </span>
+                          </div>
                         </div>
-                    </div>
-
-
-
-                    <!-- card -->
-                    <div class="item">
-                        <div class=" card">
-                            <div class="row">
-                                <div class="col-xs-7 col-7 info-col">
-                                    <h4 class="title">Sinta Wulandari</h4>
-                                    <h6 class="sub-title">Multimedia</h6>
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 img-col">
-                                    <div class="user" style="background-image: url(https://img.icons8.com/cotton/64/000000/gender-neutral-user--v1.png)"></div>
-                                </div>
-
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-col">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa libero eveniet,
-                                        voluptatibus
-                                        qui facere aut!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-          </section>
+                        <!-- /side thumbnail -->
+              
+                      </div><!-- /End col -->
+                    </div><!-- /End row -->
+                  </div><!-- /End container -->
+                </div><!-- /End customer-feedback -->
+              </section>
 
           <section id="statistik" class="p-5">
             <div class="container">
@@ -381,7 +417,7 @@
                         <i class="fas fa-building"></i>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <h3 class="font-weight-bold">20++</h3>  
+                        <h3 class="font-weight-bold">5</h3>  
                     </div>
                   </div>
             </div>
@@ -391,7 +427,7 @@
             <div class="container">
               <div class="col-12">
                   <div class="d-flex justify-content-center mb-4">
-                    <h2>Fasilitas</h2>
+                    <h2 class="section-title">Fasilitas</h2>
                   </div>
                   <div class="d-flex justify-content-end mb-2">
                        <h5><a href="fasilitas-home.html">Lihat Lainnya</a></h5>
@@ -486,7 +522,7 @@
               <div class="container">
                 <div class="col-12">
                     <div class="d-flex justify-content-center mb-4">
-                      <h2 class="text-white" style="border-bottom: 5px solid white!important">Lomba</h2>
+                      <h2 style="border-bottom: 2px solid white" class="text-white section-title">Lomba</h2>
                     </div>
                     <div class="d-flex justify-content-end mb-2">
                         <h5><a href="lomba-home.html">Lihat Lainnya</a></h5>
@@ -582,7 +618,7 @@
                 <div class="container">
                   <div class="col-12">
                       <div class="d-flex justify-content-center mb-4 p-2">
-                        <h2>Event</h2>
+                        <h2 class="section-title">Event</h2>
                       </div>
                       <div class="d-flex justify-content-end mb-2">
                           <h5><a href="event-home.html">Lihat Lainnya</a></h5>
@@ -732,15 +768,76 @@
       </div>
     
 
-    <!-- Optional JavaScript -->
-    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/owlcarousel/js/owl.carousel.min.js"></script>
+   <!-- Optional JavaScript -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="vendor/navbar/jquery/jquery-3.3.1.min.js"></script>
+    <!-- Popper js -->
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="vendor/navbar/bootstrap/js/bootstrap.js"></script>
+    <!-- All Plugins js -->
+    <script src="vendor/navbar/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="vendor/navbar/active.js"></script>
 
     <!-- call owlcarousel JavaScript -->
     <script src="js/owlcarousel.js" ></script>
     <script src="js/reviews.js"></script>
 
     <!-- custom js -->
+    <script>
+      jQuery(document).ready(function($) {
+
+        var feedbackSlider = jQuery('.feedback-slider');
+          feedbackSlider.owlCarousel({
+            items: 1,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            loop: true,
+            mouseDrag: true,
+            touchDrag: true,
+            navText: ["<i class='fa fa-long-arrow-left'></i>", "<i class='fa fa-long-arrow-right'></i>"],
+            responsive:{
+
+              // breakpoint from 767 up
+              767:{
+                nav: true,
+                dots: false
+              }
+            }
+        });
+
+          feedbackSlider.on("translate.owl.carousel", function(){
+            $(".feedback-slider-item h3").removeClass("animated fadeIn").css("opacity", "0");
+            $(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating").removeClass("animated zoomIn").css("opacity", "0");
+          });
+
+          feedbackSlider.on("translated.owl.carousel", function(){
+            $(".feedback-slider-item h3").addClass("animated fadeIn").css("opacity", "1");
+            $(".feedback-slider-item img, .feedback-slider-thumb img, .customer-rating").addClass("animated zoomIn").css("opacity", "1");
+          });
+          feedbackSlider.on('changed.owl.carousel', function(property) {
+            var current = property.item.index;
+            var prevThumb = $(property.target).find(".owl-item").eq(current).prev().find("img").attr('src');
+            var nextThumb = $(property.target).find(".owl-item").eq(current).next().find("img").attr('src');
+            var prevRating = $(property.target).find(".owl-item").eq(current).prev().find('span').attr('data-rating');
+            var nextRating = $(property.target).find(".owl-item").eq(current).next().find('span').attr('data-rating');
+            $('.thumb-prev').find('img').attr('src', prevThumb);
+            $('.thumb-next').find('img').attr('src', nextThumb);
+            $('.thumb-prev').find('span').next().html(prevRating + '<i class="fa fa-star"></i>');
+            $('.thumb-next').find('span').next().html(nextRating + '<i class="fa fa-star"></i>');
+          });
+          $('.thumb-next').on('click', function() {
+            feedbackSlider.trigger('next.owl.carousel', [300]);
+            return false;
+          });
+          $('.thumb-prev').on('click', function() {
+            feedbackSlider.trigger('prev.owl.carousel', [300]);
+            return false;
+          });
+
+        }); //end ready
+    </script>
   </body>
 </html>
