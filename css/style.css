@@ -22,6 +22,9 @@ a {
   .container {
      width: 100% !important;
   }
+  section#Kompetensi{
+    padding-top: 1rem;
+  }
 }
 
 .static {
